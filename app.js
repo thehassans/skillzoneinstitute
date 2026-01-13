@@ -83,4 +83,14 @@ if (typeof(PhusionPassenger) !== 'undefined') {
 }
 
 // Use 'passenger' as port when running under Phusion Passenger, otherwise use PORT env or default
-const PORT = (typeof(PhusionPassenger) !== 'undefined') ? 'p
+const PORT = (typeof(PhusionPassenger) !== 'undefined') ? 'passenger' : (process.env.PORT || 5000);
+
+app.listen(PORT, () => {
+    if (PORT === 'passenger') {
+        console.log('🚀 Skill Zone Server running under Phusion Passenger');
+    } else {
+        console.log(`🚀 Skill Zone Server running on port ${PORT}`);
+    }
+});
+
+module.exports = app;
