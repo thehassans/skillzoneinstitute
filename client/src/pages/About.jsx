@@ -41,15 +41,16 @@ function About() {
                             </Link>
                         </div>
                         <div style={{
-                            background: 'var(--gradient-primary)',
-                            borderRadius: 'var(--radius-2xl)',
                             height: '400px',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            fontSize: '8rem'
+                            borderRadius: 'var(--radius-2xl)',
+                            overflow: 'hidden',
+                            boxShadow: 'var(--shadow-2xl)'
                         }}>
-                            🎓
+                            <img 
+                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                alt="Our Team" 
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
                         </div>
                     </div>
                 </div>

@@ -130,6 +130,20 @@ function Contact() {
 
                         {/* Contact Info */}
                         <div>
+                            <div style={{
+                                height: '200px',
+                                borderRadius: 'var(--radius-xl)',
+                                overflow: 'hidden',
+                                marginBottom: 'var(--space-8)',
+                                boxShadow: 'var(--shadow-lg)'
+                            }}>
+                                <img 
+                                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                    alt="Our Office" 
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                            </div>
+
                             <h2 style={{ marginBottom: 'var(--space-6)' }}>Contact Information</h2>
 
                             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>

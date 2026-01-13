@@ -80,14 +80,15 @@ function Home() {
                             <div className="hero-image-wrapper" style={{
                                 width: '100%',
                                 height: '500px',
-                                background: 'var(--gradient-primary)',
                                 borderRadius: 'var(--radius-2xl)',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: '8rem'
+                                overflow: 'hidden',
+                                boxShadow: 'var(--shadow-2xl)'
                             }}>
-                                🎓
+                                <img 
+                                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                    alt="Students learning" 
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
                             </div>
 
                             <div className="floating-card card-1">
@@ -241,7 +242,8 @@ const sampleCourses = [
         duration: '8 weeks',
         level: 'beginner',
         rating: 4.8,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         slug: 'amazon-private-label-blueprint',
@@ -253,7 +255,8 @@ const sampleCourses = [
         duration: '12 weeks',
         level: 'intermediate',
         rating: 4.9,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         slug: 'ai-machine-learning-fundamentals',
@@ -265,7 +268,8 @@ const sampleCourses = [
         duration: '16 weeks',
         level: 'intermediate',
         rating: 4.9,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
         slug: 'full-stack-web-development',
@@ -277,7 +281,8 @@ const sampleCourses = [
         duration: '20 weeks',
         level: 'beginner',
         rating: 4.8,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
 ]
 

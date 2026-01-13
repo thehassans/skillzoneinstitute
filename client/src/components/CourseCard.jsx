@@ -17,17 +17,21 @@ function CourseCard({ course }) {
     return (
         <Link to={`/courses/${course.slug}`} className="course-card">
             <div className="course-card-image">
-                <div style={{
-                    width: '100%',
-                    height: '100%',
-                    background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '4rem'
-                }}>
-                    {category.icon}
-                </div>
+                {course.image ? (
+                    <img src={course.image} alt={course.title} />
+                ) : (
+                    <div style={{
+                        width: '100%',
+                        height: '100%',
+                        background: `linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%)`,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '4rem'
+                    }}>
+                        {category.icon}
+                    </div>
+                )}
                 {course.isFeatured && (
                     <span className="course-card-badge badge badge-gold">
                         ⭐ Featured

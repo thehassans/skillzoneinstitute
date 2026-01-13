@@ -248,6 +248,7 @@ const defaultHighlights = [
 const sampleCourse = {
     title: 'Amazon Wholesale Mastery',
     slug: 'amazon-wholesale-mastery',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     description: 'Learn the complete Amazon wholesale business model from sourcing to scaling. Master supplier relationships, product research, and account management to build a profitable wholesale business on Amazon.',
     category: 'amazon-wholesale',
     price: 499,
