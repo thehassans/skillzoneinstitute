@@ -1,0 +1,21 @@
+{
+  "name": "skill-zone",
+  "version": "1.0.0",
+  "description": "Skill Zone - Ultra Premium E-Commerce Learning Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": ["ecommerce", "learning", "courses", "amazon", "skills"],
+  "author": "Skill Zone",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
