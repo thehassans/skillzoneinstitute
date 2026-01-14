@@ -78,13 +78,4 @@ function Navbar() {
                         <div className="hamburger">
                             <span></span>
                             <span></span>
-                            <span></span>
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    )
-}
-
-export default Navbar
+                 

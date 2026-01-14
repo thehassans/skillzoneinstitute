@@ -137,7 +137,9 @@ const sampleCourses = [
         duration: '8 weeks',
         level: 'beginner',
         rating: 4.8,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'amazon-private-label-blueprint',
@@ -149,7 +151,9 @@ const sampleCourses = [
         duration: '12 weeks',
         level: 'intermediate',
         rating: 4.9,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'ai-machine-learning-fundamentals',
@@ -161,7 +165,9 @@ const sampleCourses = [
         duration: '16 weeks',
         level: 'intermediate',
         rating: 4.9,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
     },
     {
         slug: 'full-stack-web-development',
@@ -173,7 +179,9 @@ const sampleCourses = [
         duration: '20 weeks',
         level: 'beginner',
         rating: 4.8,
-        isFeatured: true
+        isFeatured: true,
+        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
     },
     {
         slug: 'ebay-selling-success',
@@ -184,7 +192,9 @@ const sampleCourses = [
         discountPrice: 279,
         duration: '6 weeks',
         level: 'beginner',
-        rating: 4.7
+        rating: 4.7,
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'etsy-shop-masterclass',
@@ -195,7 +205,9 @@ const sampleCourses = [
         discountPrice: 249,
         duration: '6 weeks',
         level: 'beginner',
-        rating: 4.8
+        rating: 4.8,
+        image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'walmart-marketplace-accelerator',
@@ -206,7 +218,9 @@ const sampleCourses = [
         discountPrice: 369,
         duration: '8 weeks',
         level: 'intermediate',
-        rating: 4.6
+        rating: 4.6,
+        image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     }
 ]
 

@@ -253,7 +253,8 @@ const sampleCourses = [
         level: 'beginner',
         rating: 4.8,
         isFeatured: true,
-        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'amazon-private-label-blueprint',
@@ -266,7 +267,8 @@ const sampleCourses = [
         level: 'intermediate',
         rating: 4.9,
         isFeatured: true,
-        image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
     },
     {
         slug: 'ai-machine-learning-fundamentals',
@@ -279,7 +281,8 @@ const sampleCourses = [
         level: 'intermediate',
         rating: 4.9,
         isFeatured: true,
-        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
     },
     {
         slug: 'full-stack-web-development',
@@ -292,7 +295,8 @@ const sampleCourses = [
         level: 'beginner',
         rating: 4.8,
         isFeatured: true,
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
     }
 ]
 
