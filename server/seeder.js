@@ -207,9 +207,9 @@ const courses = [
 ];
 
 const admin = {
-    name: 'Skill Zone Admin',
-    email: process.env.ADMIN_EMAIL || 'admin@skillzone.com',
-    password: process.env.ADMIN_PASSWORD || 'admin123',
+    name: 'Hafiza Aqsa Arooj',
+    email: process.env.ADMIN_EMAIL || 'Arooj@skillzone.com',
+    password: process.env.ADMIN_PASSWORD || 'Arooj@123',
     role: 'superadmin'
 };
 
