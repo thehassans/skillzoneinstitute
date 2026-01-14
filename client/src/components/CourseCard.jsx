@@ -68,4 +68,18 @@ function CourseCard({ course }) {
 
             <div className="course-card-footer">
                 <div className="course-card-price">
-                    <span className="price-current">${cours
+                    <span className="price-current">${course.discountPrice || course.price}</span>
+                    {course.discountPrice && (
+                        <span className="price-original">${course.price}</span>
+                    )}
+                </div>
+                <span className="btn btn-primary" style={{ padding: 'var(--space-2) var(--space-4)' }}>
+                    Enroll Now
+                </span>
+            </div>
+        </Link>
+    )
+}
+
+export default CourseCard
+export { categoryInfo }
