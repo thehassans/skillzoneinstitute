@@ -14,8 +14,10 @@ function Home() {
         try {
             const res = await fetch('/api/courses?featured=true&limit=4')
             const data = await res.json()
-            if (data.success) {
+            if (data.success && data.data && data.data.length > 0) {
                 setCourses(data.data)
+            } else {
+                setCourses(sampleCourses)
             }
         } catch (err) {
             // Use sample data if API is not available
@@ -214,8 +216,16 @@ function Home() {
                         <div className="cta-content">
                             <h2 className="cta-title">Ready to Start Your Journey?</h2>
                             <p className="cta-description">
-                                Join over 10,000 students who have already transformed their careers with Skill Zone.
+                                Join over 10,000 students who have already transformed their careers with Skill Zone Institutes.
                             </p>
+                            <div style={{ display: 'flex', gap: 'var(--space-6)', marginBottom: 'var(--space-6)', justifyContent: 'center', flexWrap: 'wrap' }}>
+                                <div style={{ color: 'rgba(255,255,255,0.9)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                                    <span>📞</span> +923167471183
+                                </div>
+                                <div style={{ color: 'rgba(255,255,255,0.9)', display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                                    <span>📍</span> Jinnah Colony near GC University Gate no.4
+                                </div>
+                            </div>
                             <Link to="/courses" className="btn btn-lg cta-btn">
                                 Get Started Today
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -293,14 +303,14 @@ const features = [
         description: 'Learn from industry veterans with proven track records of success in their fields.'
     },
     {
-        icon: '📱',
-        title: 'Learn Anywhere',
-        description: 'Access courses on any device, anytime. Our platform is fully responsive and mobile-friendly.'
+        icon: '🏫',
+        title: 'On-site Classes',
+        description: 'Join our physical classes at Jinnah Colony near GC University Gate no.4 for hands-on learning.'
     },
     {
-        icon: '🏆',
-        title: 'Certification',
-        description: 'Earn recognized certificates upon course completion to showcase your skills.'
+        icon: '💻',
+        title: 'Google Meet Classes',
+        description: 'Attend live online sessions via Google Meet from anywhere in the world.'
     },
     {
         icon: '💬',
@@ -313,9 +323,9 @@ const features = [
         description: 'Get lifetime access to all course materials and future updates at no extra cost.'
     },
     {
-        icon: '💰',
-        title: 'Money-Back Guarantee',
-        description: '30-day money-back guarantee if you\'re not completely satisfied with your course.'
+        icon: '📞',
+        title: 'Direct Contact',
+        description: 'Reach us anytime at +923167471183 for enrollment or course inquiries.'
     }
 ]
 

@@ -55,6 +55,15 @@ function CourseCard({ course }) {
                         ⭐ {course.rating}
                     </span>
                 </div>
+                <div style={{ 
+                    display: 'flex', 
+                    gap: 'var(--space-2)', 
+                    marginTop: 'var(--space-3)',
+                    flexWrap: 'wrap'
+                }}>
+                    <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>🏫 On-site</span>
+                    <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>💻 Google Meet</span>
+                </div>
             </div>
 
             <div className="course-card-footer">

@@ -6,6 +6,7 @@ function CourseDetail() {
     const { slug } = useParams()
     const [course, setCourse] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [selectedClassMode, setSelectedClassMode] = useState('onsite')
 
     useEffect(() => {
         fetchCourse()
@@ -18,6 +19,8 @@ function CourseDetail() {
             const data = await res.json()
             if (data.success) {
                 setCourse(data.data)
+            } else {
+                setCourse(sampleCourse)
             }
         } catch (err) {
             // Use sample course
@@ -121,6 +124,44 @@ function CourseDetail() {
                                 </div>
                             </div>
 
+                            {/* Class Mode Selection */}
+                            <div style={{ 
+                                padding: 'var(--space-6)', 
+                                background: 'var(--color-surface)', 
+                                borderRadius: 'var(--radius-xl)',
+                                marginBottom: 'var(--space-6)'
+                            }}>
+                                <h3 style={{ marginBottom: 'var(--space-4)', fontSize: 'var(--text-lg)' }}>Choose Your Class Mode</h3>
+                                <div style={{ display: 'flex', gap: 'var(--space-4)', flexWrap: 'wrap' }}>
+                                    <button
+                                        onClick={() => setSelectedClassMode('onsite')}
+                                        className={selectedClassMode === 'onsite' ? 'btn btn-primary' : 'btn btn-secondary'}
+                                        style={{ flex: 1, minWidth: '140px', padding: 'var(--space-4)' }}
+                                    >
+                                        <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: 'var(--space-2)' }}>🏫</span>
+                                        On-site Classes
+                                    </button>
+                                    <button
+                                        onClick={() => setSelectedClassMode('googlemeet')}
+                                        className={selectedClassMode === 'googlemeet' ? 'btn btn-primary' : 'btn btn-secondary'}
+                                        style={{ flex: 1, minWidth: '140px', padding: 'var(--space-4)' }}
+                                    >
+                                        <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: 'var(--space-2)' }}>💻</span>
+                                        Google Meet Classes
+                                    </button>
+                                </div>
+                                <p style={{ 
+                                    marginTop: 'var(--space-4)', 
+                                    fontSize: 'var(--text-sm)', 
+                                    color: 'var(--color-text-secondary)' 
+                                }}>
+                                    {selectedClassMode === 'onsite' 
+                                        ? '📍 Location: Jinnah Colony near GC University Gate no.4'
+                                        : '💻 Join live sessions via Google Meet from anywhere'
+                                    }
+                                </p>
+                            </div>
+
                             {course.instructor && (
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-4)', padding: 'var(--space-4)', background: 'var(--color-surface)', borderRadius: 'var(--radius-xl)' }}>
                                     <div style={{
@@ -161,7 +202,7 @@ function CourseDetail() {
                                 {category.icon}
                             </div>
 
-                            <div style={{ display: 'flex', alignItems: 'baseline', gap: 'var(--space-3)', marginBottom: 'var(--space-6)' }}>
+                            <div style={{ display: 'flex', alignItems: 'baseline', gap: 'var(--space-3)', marginBottom: 'var(--space-4)' }}>
                                 <span style={{ fontSize: 'var(--text-4xl)', fontWeight: '800' }}>
                                     ${course.discountPrice || course.price}
                                 </span>
@@ -177,12 +218,30 @@ function CourseDetail() {
                                 )}
                             </div>
 
-                            <button className="btn btn-primary btn-lg" style={{ width: '100%', marginBottom: 'var(--space-4)' }}>
-                                Enroll Now
-                            </button>
+                            <div style={{ 
+                                display: 'flex', 
+                                alignItems: 'center', 
+                                gap: 'var(--space-2)', 
+                                marginBottom: 'var(--space-4)',
+                                padding: 'var(--space-3)',
+                                background: 'var(--color-bg-secondary)',
+                                borderRadius: 'var(--radius-lg)',
+                                fontSize: 'var(--text-sm)'
+                            }}>
+                                {selectedClassMode === 'onsite' ? '🏫' : '💻'}
+                                <span>{selectedClassMode === 'onsite' ? 'On-site Classes' : 'Google Meet Classes'}</span>
+                            </div>
+
+                            <a href="tel:+923167471183" className="btn btn-primary btn-lg" style={{ width: '100%', marginBottom: 'var(--space-3)' }}>
+                                📞 Call to Enroll
+                            </a>
+                            
+                            <a href="https://wa.me/923167471183" className="btn btn-secondary btn-lg" style={{ width: '100%', marginBottom: 'var(--space-4)' }}>
+                                💬 WhatsApp Now
+                            </a>
 
                             <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text-tertiary)', textAlign: 'center' }}>
-                                30-day money-back guarantee
+                                📍 Jinnah Colony near GC University Gate no.4
                             </p>
                         </div>
                     </div>
@@ -226,6 +285,26 @@ function CourseDetail() {
                     </div>
                 </div>
             </section>
+
+            {/* Contact CTA */}
+            <section className="section" style={{ background: 'var(--color-bg-secondary)' }}>
+                <div className="container">
+                    <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
+                        <h2 style={{ marginBottom: 'var(--space-4)' }}>Ready to Enroll?</h2>
+                        <p style={{ color: 'var(--color-text-secondary)', marginBottom: 'var(--space-6)' }}>
+                            Contact us today to get started with your learning journey!
+                        </p>
+                        <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <a href="tel:+923167471183" className="btn btn-primary btn-lg">
+                                📞 +923167471183
+                            </a>
+                            <a href="https://wa.me/923167471183" className="btn btn-secondary btn-lg">
+                                💬 WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
@@ -234,15 +313,15 @@ const defaultFeatures = [
     'Complete course curriculum',
     'Hands-on projects',
     'Downloadable resources',
-    'Certificate of completion',
     'Lifetime access',
-    '24/7 support'
+    '24/7 support',
+    'Choose between on-site or Google Meet classes'
 ]
 
 const defaultHighlights = [
     { icon: '🎯', title: 'Practical Skills', description: 'Learn by doing with real-world projects' },
-    { icon: '📱', title: 'Mobile Access', description: 'Learn on any device, anywhere' },
-    { icon: '🏆', title: 'Certification', description: 'Earn a certificate upon completion' }
+    { icon: '🏫', title: 'On-site Classes', description: 'Join physical classes at Jinnah Colony' },
+    { icon: '💻', title: 'Google Meet', description: 'Attend live online sessions from anywhere' }
 ]
 
 const sampleCourse = {

@@ -110,6 +110,18 @@ function About() {
                             <p className="cta-description">
                                 Become part of a thriving community of learners and entrepreneurs.
                             </p>
+                            <div style={{ display: 'flex', gap: 'var(--space-6)', marginBottom: 'var(--space-4)', justifyContent: 'center', flexWrap: 'wrap', fontSize: 'var(--text-sm)', color: 'rgba(255,255,255,0.9)' }}>
+                                <span>🏫 On-site Classes</span>
+                                <span>💻 Google Meet Classes</span>
+                            </div>
+                            <div style={{ display: 'flex', gap: 'var(--space-6)', marginBottom: 'var(--space-6)', justifyContent: 'center', flexWrap: 'wrap', color: 'rgba(255,255,255,0.9)' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                                    <span>📞</span> +923167471183
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
+                                    <span>📍</span> Jinnah Colony near GC University Gate no.4
+                                </div>
+                            </div>
                             <Link to="/courses" className="btn btn-lg cta-btn">
                                 Get Started Today
                             </Link>

@@ -20,7 +20,7 @@ function Navbar() {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                    <img src="/logo.png" alt="Skill Zone" />
+                    <img src="/logo.png" alt="Skill Zone Institutes" />
                     <span>Skill Zone</span>
                 </Link>
 
@@ -64,7 +64,10 @@ function Navbar() {
                 </ul>
 
                 <div className="navbar-actions">
-                    <Link to="/admin" className="btn btn-ghost">Admin</Link>
+                    <a href="tel:+923167471183" className="navbar-phone">
+                        <span className="phone-icon">📞</span>
+                        <span className="phone-number">+923167471183</span>
+                    </a>
                     <Link to="/courses" className="btn btn-primary">Get Started</Link>
 
                     <button

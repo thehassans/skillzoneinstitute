@@ -20,8 +20,14 @@ function Courses() {
                 : `/api/courses?category=${activeCategory}`
             const res = await fetch(url)
             const data = await res.json()
-            if (data.success) {
+            if (data.success && data.data && data.data.length > 0) {
                 setCourses(data.data)
+            } else {
+                // Use sample data if API returns empty
+                const filtered = activeCategory === 'all'
+                    ? sampleCourses
+                    : sampleCourses.filter(c => c.category === activeCategory)
+                setCourses(filtered)
             }
         } catch (err) {
             // Use sample data if API is not available
