@@ -193,4 +193,63 @@ function Contact() {
                                         <div style={{ fontWeight: '700', marginBottom: 'var(--space-1)' }}>On-site Classes</div>
                                         <div style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--text-sm)' }}>
                                             Learn in-person at our campus in Jinnah Colony
-                                        <
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card" style={{ padding: 'var(--space-5)', display: 'flex', gap: 'var(--space-4)', alignItems: 'center' }}>
+                                    <div style={{
+                                        width: '56px',
+                                        height: '56px',
+                                        borderRadius: 'var(--radius-xl)',
+                                        background: 'var(--gradient-primary)',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontSize: '1.5rem',
+                                        flexShrink: 0
+                                    }}>
+                                        💻
+                                    </div>
+                                    <div>
+                                        <div style={{ fontWeight: '700', marginBottom: 'var(--space-1)' }}>Google Meet Classes</div>
+                                        <div style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--text-sm)' }}>
+                                            Join live sessions from anywhere via Google Meet
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* FAQ */}
+                            <h3 style={{ marginTop: 'var(--space-12)', marginBottom: 'var(--space-6)' }}>
+                                Frequently Asked Questions
+                            </h3>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-4)' }}>
+                                {faqs.map((faq, i) => (
+                                    <div key={i} className="card" style={{ padding: 'var(--space-5)' }}>
+                                        <div style={{ fontWeight: '700', marginBottom: 'var(--space-2)' }}>{faq.q}</div>
+                                        <div style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--text-sm)' }}>{faq.a}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+const contactInfo = [
+    { icon: '📞', title: 'Phone', value: '+923167471183' },
+    { icon: '💬', title: 'WhatsApp', value: '+923167471183' },
+    { icon: '📍', title: 'Location', value: 'Jinnah Colony near Gc University Gate no.4' },
+    { icon: '⏰', title: 'Hours', value: 'Mon-Sat: 9AM - 6PM' }
+]
+
+const faqs = [
+    { q: 'How do I access my courses?', a: 'After enrollment, you can access all courses from your dashboard or join live classes via Google Meet.' },
+    { q: 'What class options are available?', a: 'We offer both on-site classes at our campus and online Google Meet classes for your convenience.' },
+    { q: 'How can I enroll in a course?', a: 'Contact us via phone or WhatsApp at +923167471183, or visit our campus to enroll directly.' }
+]
+
+export default Contact

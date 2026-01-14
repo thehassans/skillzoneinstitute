@@ -122,4 +122,45 @@ function About() {
                                     <span>📍</span> Jinnah Colony near GC University Gate no.4
                                 </div>
                             </div>
-                            <Link to="/courses" className="btn bt
+                            <Link to="/courses" className="btn btn-lg cta-btn">
+                                Get Started Today
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+const stats = [
+    { value: '10K+', label: 'Active Students' },
+    { value: '50+', label: 'Premium Courses' },
+    { value: '95%', label: 'Success Rate' },
+    { value: '24/7', label: 'Support' }
+]
+
+const values = [
+    {
+        icon: '🎯',
+        title: 'Excellence',
+        description: 'We strive for excellence in everything we do, from course content to student support.'
+    },
+    {
+        icon: '💡',
+        title: 'Innovation',
+        description: 'We constantly evolve our curriculum to stay ahead of industry trends.'
+    },
+    {
+        icon: '🤝',
+        title: 'Community',
+        description: 'We believe in the power of community and peer-to-peer learning.'
+    },
+    {
+        icon: '🌟',
+        title: 'Impact',
+        description: 'We measure our success by the success of our students.'
+    }
+]
+
+export default About
