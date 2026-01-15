@@ -180,48 +180,4 @@ const sampleCourses = [
         level: 'beginner',
         rating: 4.8,
         isFeatured: true,
-        image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
-    },
-    {
-        slug: 'ebay-selling-success',
-        title: 'eBay Selling Success',
-        shortDescription: 'Build a profitable eBay business from scratch',
-        category: 'ebay',
-        price: 349,
-        discountPrice: 279,
-        duration: '6 weeks',
-        level: 'beginner',
-        rating: 4.7,
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
-    },
-    {
-        slug: 'etsy-shop-masterclass',
-        title: 'Etsy Shop Masterclass',
-        shortDescription: 'Sell handmade & digital products on Etsy',
-        category: 'etsy',
-        price: 299,
-        discountPrice: 249,
-        duration: '6 weeks',
-        level: 'beginner',
-        rating: 4.8,
-        image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
-    },
-    {
-        slug: 'walmart-marketplace-accelerator',
-        title: 'Walmart Marketplace Accelerator',
-        shortDescription: 'Expand and succeed on Walmart Marketplace',
-        category: 'walmart',
-        price: 449,
-        discountPrice: 369,
-        duration: '8 weeks',
-        level: 'intermediate',
-        rating: 4.6,
-        image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        instructor: { name: 'Hafiza Aqsa Arooj', title: 'Amazon Expert' }
-    }
-]
-
-export default Courses
+        image: 'https://images.unsplash.com/photo-1461749280684-dcc
