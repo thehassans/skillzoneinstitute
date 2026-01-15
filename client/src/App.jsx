@@ -34,4 +34,10 @@ function App() {
                         </main>
                         <Footer />
                     </>
-          
+                } />
+            </Routes>
+        </Router>
+    )
+}
+
+export default App

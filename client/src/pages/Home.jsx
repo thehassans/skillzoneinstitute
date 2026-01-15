@@ -296,4 +296,41 @@ const sampleCourses = [
         rating: 4.8,
         isFeatured: true,
         image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        instruct
+        instructor: { name: 'Hassan Sarwar', title: 'AI & Development Expert' }
+    }
+]
+
+const features = [
+    {
+        icon: '🎯',
+        title: 'Expert Instructors',
+        description: 'Learn from industry veterans with proven track records of success in their fields.'
+    },
+    {
+        icon: '🏫',
+        title: 'On-site Classes',
+        description: 'Join our physical classes at Jinnah Colony near GC University Gate no.4 for hands-on learning.'
+    },
+    {
+        icon: '💻',
+        title: 'Google Meet Classes',
+        description: 'Attend live online sessions via Google Meet from anywhere in the world.'
+    },
+    {
+        icon: '💬',
+        title: 'Community Support',
+        description: 'Join our vibrant community of learners and get help when you need it.'
+    },
+    {
+        icon: '🔄',
+        title: 'Lifetime Access',
+        description: 'Get lifetime access to all course materials and future updates at no extra cost.'
+    },
+    {
+        icon: '📞',
+        title: 'Direct Contact',
+        description: 'Reach us anytime at +923167471183 for enrollment or course inquiries.'
+    }
+]
+
+export default Home
