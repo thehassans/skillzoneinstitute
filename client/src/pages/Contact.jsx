@@ -242,7 +242,7 @@ function Contact() {
 const contactInfo = [
     { icon: '📞', title: 'Phone', value: '+923167471183' },
     { icon: '💬', title: 'WhatsApp', value: '+923167471183' },
-    { icon: '📍', title: 'Location', value: 'Jinnah Colony near Gc University Gate no.4' },
+    { icon: '📍', title: 'Location', value: 'Office No 1, The Platform, AZ Mall near Al Fatah Mall, Kohinoor Faisalabad' },
     { icon: '⏰', title: 'Hours', value: 'Mon-Sat: 9AM - 6PM' }
 ]
 

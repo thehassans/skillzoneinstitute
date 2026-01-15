@@ -8,7 +8,6 @@ function Footer() {
                     <div className="footer-brand">
                         <Link to="/" className="footer-logo">
                             <img src="/logo.png" alt="Skill Zone Institutes" />
-                            <span>Skill Zone</span>
                         </Link>
                         <p className="footer-description">
                             Master e-commerce and tech skills with our ultra-premium courses.
@@ -21,7 +20,7 @@ function Footer() {
                             </div>
                             <div className="footer-contact-item">
                                 <span>📍</span>
-                                <span>Jinnah Colony near Gc University Gate no.4</span>
+                                <span>Office No 1, The Platform, AZ Mall near Al Fatah Mall, Kohinoor Faisalabad</span>
                             </div>
                         </div>
                         <div className="footer-social">
@@ -91,7 +90,7 @@ function Footer() {
 
                 <div className="footer-bottom">
                     <p>&copy; 2024 Skill Zone Institutes. All rights reserved.</p>
-                    <p>📞 +923167471183 | 📍 Jinnah Colony near GC University Gate no.4</p>
+                    <p>📞 +923167471183 | 📍 Office No 1, The Platform, AZ Mall, Kohinoor Faisalabad</p>
                 </div>
             </div>
         </footer>

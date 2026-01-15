@@ -21,7 +21,6 @@ function Navbar() {
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
                     <img src="/logo.png" alt="Skill Zone Institutes" />
-                    <span>Skill Zone</span>
                 </Link>
 
                 <ul className={`navbar-nav ${mobileOpen ? 'open' : ''}`}>

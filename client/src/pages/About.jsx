@@ -119,7 +119,7 @@ function About() {
                                     <span>📞</span> +923167471183
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
-                                    <span>📍</span> Jinnah Colony near GC University Gate no.4
+                                    <span>📍</span> Office No 1, The Platform, AZ Mall, Kohinoor Faisalabad
                                 </div>
                             </div>
                             <Link to="/courses" className="btn btn-lg cta-btn">
